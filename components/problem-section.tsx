@@ -16,7 +16,7 @@ export function ProblemSection() {
     {
       icon: <Clock className="w-8 h-8 text-destructive" />,
       title: "Proceso lento y costoso",
-      description: "Tiempos de espera largos y ineficiencia",
+      description: "Tiempos de espera largos e ineficiencia",
     },
     {
       icon: <DollarSign className="w-8 h-8 text-destructive" />,

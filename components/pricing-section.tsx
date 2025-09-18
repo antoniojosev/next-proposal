@@ -7,7 +7,7 @@ export function PricingSection() {
     {
       name: "Plan Starter (MVP Básico)",
       icon: <Smartphone className="w-8 h-8 text-primary" />,
-      price: "$5,000 - $7,000",
+      price: "$4,700 - $7,200",
       monthly: "$300 - $500",
       description: "Ideal para comenzar y validar el mercado",
       features: [
