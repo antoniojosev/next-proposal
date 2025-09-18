@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
+import { ContactModal } from "@/components/contact-modal"
 import { ArrowRight, CheckCircle, Clock, Handshake, Rocket } from "lucide-react"
 
 export function CTASection() {
@@ -32,8 +33,8 @@ export function CTASection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {steps.map((step, index) => (
-            <Card key={index} className="p-6 text-center bg-white/10 backdrop-blur-sm border-white/20 text-white">
+          {steps.map((step) => (
+            <Card key={step.title} className="p-6 text-center bg-white/10 backdrop-blur-sm border-white/20 text-white">
               <div className="flex justify-center mb-4">
                 <div className="p-3 bg-white/20 rounded-full">{step.icon}</div>
               </div>
@@ -46,29 +47,40 @@ export function CTASection() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 text-2xl font-bold mb-8 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3">
             <Rocket className="w-6 h-6" />
-            <span>Menos gasto, más control, más clientes felices</span>
+            <span>Menos gasto, más control, más ganancias</span>
           </div>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
-            <ArrowRight className="w-5 h-5 mr-2" />
-            Comenzar Ahora
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary bg-transparent"
+          <ContactModal 
+            title="Comenzar Desarrollo"
+            description="¡Perfecto! Vamos a crear su plataforma de movilidad personalizada."
           >
-            Agendar Consulta
-          </Button>
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+              <ArrowRight className="w-5 h-5 mr-2" />
+              Comenzar Ahora
+            </Button>
+          </ContactModal>
+          
+          <ContactModal 
+            title="Agendar Consulta" 
+            description="Conversemos sobre sus necesidades y encontremos el plan perfecto."
+          >
+            <Button
+              size="lg"
+              variant="outline"
+              className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-primary bg-transparent"
+            >
+              Agendar Consulta
+            </Button>
+          </ContactModal>
         </div>
 
         <div className="text-center mt-8 text-primary-foreground/80">
           <p className="text-sm">
             ¿Preguntas? Contáctenos:{" "}
-            <a href="mailto:info@movilidad.com" className="underline hover:text-white">
-              info@movilidad.com
+            <a href="mailto:vila.antoniojose@gmail.com" className="underline hover:text-white">
+              vila.antoniojose@gmail.com
             </a>
           </p>
         </div>

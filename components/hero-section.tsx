@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Car, Smartphone } from "lucide-react"
 
@@ -21,7 +23,16 @@ export function HeroSection() {
         </p>
 
         <div className="flex justify-center">
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-4">
+          <Button 
+            size="lg" 
+            variant="secondary" 
+            className="text-lg px-8 py-4"
+            onClick={() => {
+              document.getElementById('planes')?.scrollIntoView({ 
+                behavior: 'smooth' 
+              })
+            }}
+          >
             Ver Planes
           </Button>
         </div>
