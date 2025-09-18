@@ -1,0 +1,5 @@
+# Proxy para /next hacia el proyecto Next.js en Netlify
+/next/* https://TU-PROYECTO-NEXTJS.netlify.app/next/:splat 200
+
+# Otras rutas de tu portafolio
+/* /index.html 200
