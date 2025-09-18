@@ -4,9 +4,8 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  },
-  basePath: '/next',  // Esto hará que funcione en antoniovila.dev/next
-  assetPrefix: '/next'
+  }
+  // Sin basePath para Netlify - funcionará en el dominio raíz
 };
 
 export default nextConfig;

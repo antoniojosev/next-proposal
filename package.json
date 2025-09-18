@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
+    "netlify-build": "npm install --legacy-peer-deps && next build",
     "deploy": "npm run export && touch out/.nojekyll && git add out/ && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix out origin gh-pages",
     "start": "next start",
     "lint": "next lint"
