@@ -122,6 +122,7 @@ export function Operations247Section() {
             </Card>
           </div>
 
+                   
           {/* Before/After Comparison */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <Card className="p-6 bg-gradient-to-br from-destructive/10 to-destructive/5">
@@ -213,6 +214,190 @@ export function Operations247Section() {
             </div>
           </Card>
         </div>
+
+        {/* App Demo Carousel - Final Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-primary mb-4">📱 Ejemplo de Pantallas de la App</h3>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Interfaz intuitiva diseñada para maximizar la eficiencia operativa
+            </p>
+          </div>
+          
+          {/* Carousel Container */}
+          <div className="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary/5 via-accent/5 to-secondary/5 p-6">
+            <div className="flex space-x-6 animate-scroll">
+              {/* Mockup 1 - Pantalla de Bienvenida */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/bienvenidos.png" 
+                      alt="Pantalla de bienvenida - Primer contacto con la app" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Pantalla de Bienvenida</h4>
+                  <p className="text-sm text-muted-foreground text-center">Primera impresión amigable e intuitiva</p>
+                </Card>
+              </div>
+
+              {/* Mockup 2 - Verificación de Número */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-accent/20 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/verifica_tu_numero.png" 
+                      alt="Verificación de número telefónico - Seguridad" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Verificación de Número</h4>
+                  <p className="text-sm text-muted-foreground text-center">Proceso seguro de validación</p>
+                </Card>
+              </div>
+
+              {/* Mockup 3 - Solicitar Servicio */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/solicitar_sercvicio_de_taxi.png" 
+                      alt="Solicitar servicio de taxi - Pantalla principal" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Solicitar Servicio</h4>
+                  <p className="text-sm text-muted-foreground text-center">Interfaz principal para viajes</p>
+                </Card>
+              </div>
+
+              {/* Mockup 4 - Detalles de Solicitud */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/detalles_de_solicitud.png" 
+                      alt="Detalles de solicitud - Información completa del viaje" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Detalles de Solicitud</h4>
+                  <p className="text-sm text-muted-foreground text-center">Vista completa del viaje</p>
+                </Card>
+              </div>
+
+              {/* Mockup 5 - Método de Pago */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-accent/20 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/pantalla_metodo_de_pago.png" 
+                      alt="Método de pago - Selección de forma de pago" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Método de Pago</h4>
+                  <p className="text-sm text-muted-foreground text-center">Selección fácil y segura</p>
+                </Card>
+              </div>
+
+              {/* Mockup 6 - Resumen y Confirmación */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/resumen_y_confirmacion.png" 
+                      alt="Resumen y confirmación - Últimos detalles antes del viaje" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Resumen y Confirmación</h4>
+                  <p className="text-sm text-muted-foreground text-center">Vista final antes de confirmar</p>
+                </Card>
+              </div>
+
+              {/* Mockup 7 - Estado de Conexión del Conductor */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-blue-500/20 hover:border-blue-500/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/conductor_estado_de_conexion.png" 
+                      alt="Estado de conexión del conductor - Panel de control" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Estado del Conductor</h4>
+                  <p className="text-sm text-muted-foreground text-center">Panel de conexión en tiempo real</p>
+                </Card>
+              </div>
+
+              {/* Mockup 8 - Nueva Solicitud */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/conductor_nueva_solicitud.png" 
+                      alt="Nueva solicitud para conductor - Notificación" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Nueva Solicitud</h4>
+                  <p className="text-sm text-muted-foreground text-center">Notificación de nuevo viaje</p>
+                </Card>
+              </div>
+
+              {/* Mockup 9 - Solicitud Asignada */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/conductor_solicitud_asignada.png" 
+                      alt="Solicitud asignada al conductor - Vista activa" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Viaje Asignado</h4>
+                  <p className="text-sm text-muted-foreground text-center">Gestión del viaje activo</p>
+                </Card>
+              </div>
+
+              {/* Duplicar las primeras para bucle continuo */}
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/bienvenidos.png" 
+                      alt="Pantalla de bienvenida - Primer contacto con la app" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Pantalla de Bienvenida</h4>
+                  <p className="text-sm text-muted-foreground text-center">Primera impresión amigable e intuitiva</p>
+                </Card>
+              </div>
+
+              <div className="flex-shrink-0 w-80">
+                <Card className="p-4 bg-white/80 backdrop-blur-sm border-2 border-accent/20 hover:border-accent/40 transition-all duration-300 hover:scale-105">
+                  <div className="aspect-[9/16] w-full max-w-[200px] mx-auto bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/mockups/verifica_tu_numero.png" 
+                      alt="Verificación de número telefónico - Seguridad" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-primary mb-2 text-center">Verificación de Número</h4>
+                  <p className="text-sm text-muted-foreground text-center">Proceso seguro de validación</p>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Gradient overlays for seamless effect */}
+            <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-white/50 to-transparent pointer-events-none"></div>
+            <div className="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-white/50 to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+
       </div>
     </section>
   )
